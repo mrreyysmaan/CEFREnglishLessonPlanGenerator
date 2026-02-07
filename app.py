@@ -67,28 +67,27 @@ TONE: Professional, concise, and ready to copy-paste.
      1. [Main Objective - SMART]
      2. [Complementary Objective - SMART]
 
-3. **LESSON STEPS (Strict Formatting):**
-   - **IMPORTANT:** Restart numbering at '1.' for EACH section (Pre-Lesson, Lesson Delivery, Post-Lesson).
-   - Ensure every step is on its own new line.
-   - **Structure:**
+3. **LESSON STEPS (CRITICAL FORMATTING - COPY/PASTE FRIENDLY):**
+   - **NUMBERING FIX:** Do NOT use standard markdown lists (1. Item). 
+   - **INSTEAD:** Use **bold numbers** manually typed out (e.g., **1.**) so they copy-paste correctly.
+   - Restart numbering at '1.' for EACH section.
+   - Structure:
      
      **Pre-Lesson**
-     1. [Step 1]
-     2. [Step 2]
-     ...
+     **1.** [Step 1]
+     **2.** [Step 2]
 
      **Lesson Delivery**
-     1. [Step 1]
-     2. [Step 2]
+     **1.** [Step 1]
+     **2.** [Step 2]
         * *Sample:* [Insert sample text here if needed]
-     3. [Step 3]
+     **3.** [Step 3]
         * **Advanced:** [Differentiation instruction]
         * **Remedial:** [Differentiation instruction]
-     ...
 
      **Post-Lesson**
-     1. [Step 1]
-     ...
+     **1.** [Step 1]
+     **2.** [Step 2]
 
    - **Keep instructions SHORT.** Do NOT include dialogue for simple instructions.
    - **INCLUDE SAMPLES ONLY FOR MODELING.**
