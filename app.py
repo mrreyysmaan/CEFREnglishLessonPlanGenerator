@@ -1519,7 +1519,7 @@ TONE: Professional, concise, and ready to copy-paste.
    - Start exactly with: "Good day teacher! I'm Mr Reyy's assistant. Let's make learning {TOPIC_KEYWORD}, in the best possible way!" 
    - (Replace {TOPIC_KEYWORD} with the main topic of the unit selected).
 
-2. **OBJECTIVES (Clean & Simple):**
+2. **OBJECTIVES:**
    - Format exactly like this:
      "By the end of the lesson, pupils will be able to:"
      
@@ -1535,7 +1535,7 @@ TONE: Professional, concise, and ready to copy-paste.
    
    **2.** Pupils can [measurable action related to complementary objective].
 
-3. **LESSON STEPS (CRITICAL FORMATTING - COPY/PASTE FRIENDLY):**
+3. **LESSON STEPS:**
    - **NO PARAGRAPHS:** Never group steps together.
    - **NUMBERING:** Use **bold numbers** manually typed out (e.g., **1.**) followed by the step.
    - **SPACING:** You MUST leave an empty line between every step.
@@ -1579,7 +1579,7 @@ TONE: Professional, concise, and ready to copy-paste.
 # 🖥️ PART 3: THE WEB APP INTERFACE
 # ==========================================
 
-st.set_page_config(page_title="MY CEFR Planner", page_icon="🇲🇾", layout="wide")
+st.set_page_config(page_title="CEFR English Lesson Planner", page_icon="🇲🇾", layout="wide")
 
 st.markdown("""
 <style>
