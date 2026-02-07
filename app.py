@@ -174,41 +174,31 @@ if generate_btn:
         """
         
         with st.spinner("🤖 Consulting the syllabus... Creating detailed steps..."):
-            # List of models to try in order of preference (Auto-Fallback)
-            model_candidates = [
-                'gemini-1.5-flash',
-                'gemini-1.5-pro',
-                'gemini-pro',
-                'gemini-1.0-pro'
-            ]
             
-            success = False
-            error_log = []
-
-            for model_name in model_candidates:
-                try:
-                    model = genai.GenerativeModel(model_name)
+            # --- AUTO-DISCOVERY MODE ---
+            # Instead of guessing the model name, we ask the API what models are available to THIS key.
+            try:
+                available_model = None
+                
+                # 1. Ask Google: "What models do I have access to?"
+                for m in genai.list_models():
+                    if 'generateContent' in m.supported_generation_methods:
+                        available_model = m.name
+                        # Prefer Flash or Pro if available
+                        if 'flash' in m.name or 'pro' in m.name:
+                            break 
+                
+                # 2. If we found a model, use it
+                if available_model:
+                    # st.info(f"Connecting to: {available_model}") # Uncomment for debug
+                    model = genai.GenerativeModel(available_model)
                     response = model.generate_content(full_prompt)
                     st.markdown(response.text)
-                    st.success(f"Generated successfully using **{model_name}**!")
-                    success = True
-                    break # Stop if successful
-                except Exception as e:
-                    error_log.append(f"{model_name}: {str(e)}")
+                    st.success(f"Generated successfully using **{available_model}**!")
+                else:
+                    st.error("❌ Your API Key is valid, but no text-generation models were found. This is very unusual.")
             
-            if not success:
-                st.error("⚠️ All AI models failed. This usually means the API Key is invalid or the server needs a restart.")
-                with st.expander("See Error Details"):
-                    for err in error_log:
-                        st.warning(err)
-                
-                # Diagnostic: Check what models are ACTUALLY available to this key
-                try:
-                    st.info("Attempting to list available models for your key...")
-                    available = []
-                    for m in genai.list_models():
-                        if 'generateContent' in m.supported_generation_methods:
-                            available.append(m.name)
-                    st.write("Your API Key has access to:", available)
-                except Exception as list_err:
-                    st.error(f"Could not even list models. Your API Key might be incorrect. Error: {list_err}")
+            except Exception as e:
+                st.error("❌ CONNECTION FAILED.")
+                st.write("This usually means the API Key is invalid, copied incorrectly, or has not been activated.")
+                st.warning(f"Error Details: {e}")
