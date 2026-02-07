@@ -8,7 +8,7 @@ import google.generativeai as genai
 MANUAL_API_KEY = "AIzaSyCEJVCC_ExaT0R5lNvzP-ZsuAIjFC98WYU"
 
 # ==========================================
-# 📂 PART 1: THE SYLLABUS VAULT
+# 📂 PART 1: THE SYLLABUS VAULT (UPDATED WITH YEAR 1)
 # ==========================================
 SYLLABUS_DB = {
     "Year 6": {
@@ -36,13 +36,125 @@ SYLLABUS_DB = {
         }
     },
     "Year 1": {
-        "Unit 1: Friends": {
-            "Listening": ["1.1.1 Recognise and reproduce target language sounds & 1.2.1 Understand meaning"],
-            "Speaking": ["2.1.1 Give very basic personal information & 2.1.5 Name or describe objects"]
+        "Unit 0: Friends": {
+            "Speaking": [
+                "2.1.4 Greet, say goodbye, and express thanks & 2.3.1 Introduce self to an audience",
+                "2.1.1 Give very basic personal information & 3.1.3 Blend phonemes (CVC, CCVC)",
+                "2.3.1 Introduce self to an audience & 4.3.1 Use capital letters in names"
+            ],
+            "Listening": [
+                "1.2.4 Understand short basic supported classroom instructions & 4.1.2 Form letters and words",
+                "1.2.2 Understand with support specific information & 2.1.1 Give very basic personal information",
+                "1.2.5 Understand short supported questions & 4.2.1 Give very basic personal information"
+            ],
+            "Reading": [
+                "3.1.1 Identify and recognise shapes of letters & 3.1.2 Recognise and sound out sounds",
+                "3.1.1 Identify and recognise shapes of letters & 4.1.2 Form letters and words",
+                "3.2.2 Understand specific information & 1.2.3 Understand very short simple narratives"
+            ],
+            "Writing": [
+                "4.1.2 Form letters and words & 3.1.2 Recognise and sound out sounds",
+                "4.1.2 Form letters and words & 2.1.1 Give very basic personal information",
+                "4.1.2 Form letters and words & 3.3.1 Read and enjoy simple games at word level",
+                "4.2.1 Give very basic personal information & 2.1.5 Name or describe objects"
+            ],
+            "Language Arts": [
+                "5.1.1 Demonstrate appreciation (chants/raps) & 5.1.2 Say words in simple texts",
+                "5.1.1 Demonstrate appreciation (chants/raps) & 2.1.5 Name or describe objects"
+            ]
         },
-        "Unit 2: At School": {
-            "Reading": ["3.1.1 Identify and recognise the shapes of the letters & 3.1.2 Recognise and sound out"],
-            "Writing": ["4.1.2 copy letters and familiar high frequency words"]
+        "Unit 1: At School": {
+            "Listening": [
+                "1.2.1 Understand main idea & 2.1.5 Name or describe objects",
+                "1.3.1 Predict words & 1.2.4 Understand instructions",
+                "1.2.3 Understand narratives & 3.2.1 Understand main idea",
+                "1.2.1 Understand main idea & 1.2.2 Understand specific information",
+                "1.2.2 Understand specific information & 2.1.1 Give personal info",
+                "1.2.2 Understand specific information & 1.2.5 Understand questions",
+                "1.2.4 Understand instructions & 2.2.2 Ask for attention or help"
+            ],
+            "Speaking": [
+                "2.1.5 Name or describe objects & 1.2.2 Understand specific information",
+                "2.1.4 Greet/Thanks & 1.2.2 Understand specific information",
+                "2.1.1 Give personal info & 1.2.5 Understand questions",
+                "2.1.4 Greet/Thanks & 2.2.2 Ask for attention or help",
+                "2.1.2 Find out personal info & 4.2.5 Connect words with 'and'",
+                "2.1.4 Greet/Thanks & 1.2.4 Understand instructions"
+            ],
+            "Language Arts": [
+                "5.2.1 Name items in illustrations & 5.3.1 Respond imaginatively (art/craft)",
+                "5.2.1 Name items in illustrations & 2.1.5 Name or describe objects",
+                "5.1.2 Say words in simple texts & 5.3.1 Respond imaginatively",
+                "5.1.1 Demonstrate appreciation & 5.1.2 Say words in simple texts",
+                "5.3.1 Respond imaginatively & 1.2.4 Understand instructions",
+                "5.1.1 Demonstrate appreciation & 5.3.1 Respond imaginatively"
+            ],
+            "Reading": [
+                "3.1.3 Blend phonemes & 4.3.2 Spell high frequency words",
+                "3.1.2 Sound out sounds & 1.1.1 Recognise phonemes",
+                "3.1.3 Blend phonemes & 3.1.4 Segment phonemes",
+                "3.2.2 Understand specific info & 2.1.5 Name or describe objects",
+                "3.1.2 Sound out sounds & 4.3.2 Spell high frequency words"
+            ],
+            "Writing": [
+                "4.2.2 Greet/Thanks & 4.2.4 Name or describe objects",
+                "4.2.4 Name or describe objects & 1.2.4 Understand instructions",
+                "4.2.2 Greet/Thanks & 4.3.2 Spell high frequency words",
+                "4.3.2 Spell high frequency words & 3.2.1 Understand main idea",
+                "4.3.2 Spell high frequency words & 3.2.2 Understand specific info",
+                "4.2.4 Name or describe objects & 3.2.4 Name or describe objects"
+            ]
+        },
+        "Unit 2: Let's Play!": {
+            "Speaking": [
+                "2.1.5 Name or describe objects & 1.2.1 Understand main idea",
+                "2.1.1 Give personal info & 4.2.1 Give personal info",
+                "2.1.5 Understand questions & 2.2.2 Ask for attention or help",
+                "2.1.5 Name or describe objects & 3.2.2 Understand specific info",
+                "2.1.3 Express likes/dislikes & 2.2.2 Ask for attention or help",
+                "2.1.1 Give personal info & 2.2.2 Ask for attention or help"
+            ],
+            "Reading": [
+                "3.2.2 Understand specific info & 2.1.2 Find out personal info",
+                "3.1.3 Blend phonemes & 3.1.4 Segment phonemes",
+                "3.2.1 Understand main idea & 1.2.3 Understand narratives",
+                "3.2.3 Use visuals & 4.2.4 Name or describe objects",
+                "3.1.2 Sound out sounds & 1.1.1 Recognise phonemes",
+                "3.1.1 Recognise letter shapes & 3.1.2 Sound out sounds",
+                "3.2.3 Use visuals & 1.2.5 Understand questions"
+            ],
+            "Language Arts": [
+                "5.2.1 Name items in illustrations & 1.2.3 Understand narratives",
+                "5.2.1 Name items in illustrations & 1.2.2 Understand specific info",
+                "5.2.1 Name items in illustrations & 4.3.3 Plan and write words",
+                "5.2.1 Name items in illustrations & 5.3.1 Respond imaginatively",
+                "5.1.1 Demonstrate appreciation & 5.2.1 Name items in illustrations"
+            ],
+            "Listening": [
+                "1.2.4 Understand instructions & 2.1.5 Name or describe objects",
+                "1.2.2 Understand specific info & 1.2.5 Understand questions",
+                "1.3.1 Predict words & 1.2.2 Understand specific info",
+                "1.2.2 Understand specific info & 3.2.2 Understand specific info",
+                "1.2.2 Understand specific info & 2.1.5 Name or describe objects"
+            ],
+            "Writing": [
+                "2.1.3 Express likes/dislikes & 2.3.1 Introduce self",
+                "4.2.3 Express likes/dislikes & 2.2.2 Ask for attention or help",
+                "4.3.2 Spell high frequency words & 3.3.1 Read simple games",
+                "4.3.1 Use capital letters & 3.2.2 Understand specific info",
+                "4.2.3 Spell high frequency words & 2.1.3 Express likes/dislikes",
+                "4.3.2 Use capital letters & 4.3.3 Spell high frequency words",
+                "4.3.2 Use capital letters & 4.2.1 Give personal info"
+            ]
+        },
+        "Unit 3: Pet Show": {
+            "Listening": [
+                "1.2.1 Understand main idea & 2.1.5 Name or describe objects",
+                "1.2.2 Understand specific info & 2.1.5 Name or describe objects"
+            ],
+            "Language Arts": ["5.3.1 Respond imaginatively & 4.2.4 Name or describe objects"],
+            "Speaking": ["2.1.2 Find out personal info & 2.1.3 Express likes/dislikes"],
+            "Reading": ["3.1.3 Blend phonemes & 3.3.1 Read simple games"]
         }
     }
 }
@@ -149,12 +261,15 @@ with st.sidebar:
     year_options = list(SYLLABUS_DB.keys())
     selected_year = st.selectbox("1. Class Level", year_options)
 
+    # Dynamic Units based on Year
     unit_options = list(SYLLABUS_DB[selected_year].keys())
     selected_unit = st.selectbox("2. Topic / Unit", unit_options)
 
+    # Dynamic Skills based on Unit
     skill_options = list(SYLLABUS_DB[selected_year][selected_unit].keys())
     selected_skill = st.selectbox("3. Focus Skill", skill_options)
 
+    # Dynamic LS based on Skill
     ls_options = SYLLABUS_DB[selected_year][selected_unit][selected_skill]
     selected_ls = st.selectbox("4. Learning Standards", ls_options)
 
