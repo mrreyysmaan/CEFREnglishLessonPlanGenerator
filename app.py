@@ -326,7 +326,7 @@ SYLLABUS_DB = {
                 "2.3.1 Introduce self and others to an audience using fixed phrases & 2.1.2 Find out about personal information by asking basic questions",
                 "2.1.2 Find out about personal information by asking basic questions & 4.2.1 Ask for and give basic personal information using basic questions and statements",
                 "2.1.4 Ask about and express ability & 1.2.5 Understand an increased range of short supported questions",
-                "2.2.1 Keep interaction going in short exchanges by using suitable non-verbal responses & 2.2.2 Ask for attention or help from a teacher or classmate using one word or a fixed phrase",
+                "2.2.1 Keep interaction going in short exchanges & 2.2.2 Ask for attention or help from a teacher or classmate using one word or a fixed phrase",
                 "2.1.5 Describe objects using suitable words and phrases & 4.2.4 Name or describe objects using suitable words from word sets"
             ],
             "Writing": [
