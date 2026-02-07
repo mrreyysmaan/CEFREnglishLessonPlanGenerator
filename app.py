@@ -700,7 +700,7 @@ SYLLABUS_DB = {
             "Listening": [
                 "1.2.2 Understand with support specific information and details of longer simple texts & 1.1.1 Recognise and reproduce with support a wide range of target language phonemes",
                 "1.2.2 Understand with support specific information and details of longer simple texts & 1.1.1 Recognise and reproduce with support a wide range of target language phonemes",
-                "1.2.3 Understand with support short simple narratives on range of familiar topics & 1.1.1 Recognise and reproduce with support a wide range of target language phonemes"
+                "1.2.3 Understand with support short simple narratives on a range of familiar topics & 1.1.1 Recognise and reproduce with support a wide range of target language phonemes"
             ],
             "Speaking": [
                 "2.1.5 Describe people and objects using suitable words and phrases & 1.2.4 Understand longer supported classroom instructions",
@@ -1529,7 +1529,8 @@ TONE: Professional, concise, and ready to copy-paste.
    - Use **bold numbers** manually typed out (e.g., **1.**).
    - Leave an empty line between objectives.
    
-   **Success Criteria:**
+   **Success Criteria:** (Leave a blank line after this header)
+   
    **1.** Pupils can [measurable action related to main objective].
    
    **2.** Pupils can [measurable action related to complementary objective].
