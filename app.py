@@ -1521,6 +1521,7 @@ TONE: Professional, concise, and ready to copy-paste.
 
 2. **OBJECTIVES:**
    - Format exactly like this:
+     **Lesson Objectives**
      "By the end of the lesson, pupils will be able to:"
      
      **1.** [Main Objective - SMART]
@@ -1529,20 +1530,19 @@ TONE: Professional, concise, and ready to copy-paste.
    - Use **bold numbers** manually typed out (e.g., **1.**).
    - Leave an empty line between objectives.
    
-   **Success Criteria:** (Leave a blank line after this header)
+   **Success Criteria** (Leave a blank line after this header)
    
    **1.** Pupils can [measurable action related to main objective].
    
    **2.** Pupils can [measurable action related to complementary objective].
 
-3. **LESSON STEPS (CRITICAL FORMATTING - COPY/PASTE FRIENDLY):**
-   - **NO ACTIVITY NAMES:** Do NOT start steps with creative names (e.g., DO NOT write: '**1.** "Simon Says": Teacher...'). Write straight to the action.
-   - **SENTENCE STRUCTURE:** Do NOT use imperative start (e.g., "Ask pupils..."). ALWAYS use a subject (e.g., "Teacher asks pupils..." or "Pupils discuss...").
-   - **STUDENT-CENTERED:** Pre-Lesson is often "Teacher...", but Lesson Delivery MUST focus on "Pupils..." (e.g., "Pupils pair up", "Groups brainstorm").
-   - **NO MARKDOWN BLOCKS:** Do NOT use code blocks (```) or blockquotes (>) for samples/differentiation. Use standard text/bullets.
+3. **LESSON STEPS:**
+   - **NO PARAGRAPHS:** Never group steps together.
    - **NUMBERING:** Use **bold numbers** manually typed out (e.g., **1.**) followed by the step.
    - **SPACING:** You MUST leave an empty line between every step.
-   - **DIFFERENTIATION/SAMPLES:** Must be on a NEW LINE with an empty line before them. Use standard bullet points (*), not code blocks.
+   - **DIFFERENTIATION/SAMPLES:** Must be on a NEW LINE with an empty line before them. 
+   - **NO BULLETS FOR SAMPLES/DIFFERENTIATION:** Do NOT use asterisks (*) or bullet points for Sample, Advanced, or Remedial sections. Just write the label (e.g., "Sample:", "Advanced:") and the text.
+   - **NO INDENTATION:** Align Sample, Advanced, and Remedial text to the left. Do not indent.
    - Restart numbering at '1.' for EACH section.
    
    **Strict Layout Template:**
@@ -1561,13 +1561,13 @@ TONE: Professional, concise, and ready to copy-paste.
    
    **3.** [Step 3 instruction]
       
-      * *Sample:* "..."
+      Sample: "..."
    
    **4.** [Step 4 instruction]
       
-      * **Advanced:** ...
+      Advanced: ...
       
-      * **Remedial:** ...
+      Remedial: ...
 
    **Post-Lesson**
    
