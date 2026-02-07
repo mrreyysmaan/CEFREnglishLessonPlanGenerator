@@ -5,15 +5,11 @@ import google.generativeai as genai
 # 🔑 EMERGENCY KEY SLOT
 # ==========================================
 # If the "Secrets" are not working, paste your API key inside the quotes below.
-# Example: MANUAL_API_KEY = "AIzaSy..."
 MANUAL_API_KEY = "AIzaSyCEJVCC_ExaT0R5lNvzP-ZsuAIjFC98WYU"
 
 # ==========================================
-# 📂 PART 1: THE SYLLABUS VAULT (PASTE YOUR DATA HERE)
+# 📂 PART 1: THE SYLLABUS VAULT
 # ==========================================
-# This is where you paste your SOW. 
-# FORMAT: "Year": { "Unit": { "Skill": [ "Learning Standards" ] } }
-
 SYLLABUS_DB = {
     "Year 6": {
         "Unit 1: It's An Emergency": {
@@ -49,44 +45,40 @@ SYLLABUS_DB = {
             "Writing": ["4.1.2 copy letters and familiar high frequency words"]
         }
     }
-    # You can copy-paste more years here following the same curly bracket pattern
 }
 
 # ==========================================
-# 🤖 PART 2: THE AI INSTRUCTIONS (THE BRAIN)
+# 🤖 PART 2: THE AI INSTRUCTIONS (MR REYY'S ASSISTANT)
 # ==========================================
 
 SYSTEM_PROMPT = """
-ACT AS: A Guru Cemerlang (Expert Malaysian English Teacher).
-TASK: Create a highly detailed, student-centered CEFR Lesson Plan.
+ACT AS: Mr Reyy's Assistant (An efficient, practical Malaysian English Teacher's aide).
+TONE: Professional, concise, and ready to copy-paste.
 
-STRICT CONSTRAINTS:
-1. **3 STAGES:** Structure into Pre-Lesson, Lesson Delivery, and Post-Lesson.
-2. **DETAILED NUMBERED STEPS:** Do NOT write summaries. Write "1. Pupils do X... 2. Teacher says Y...".
-3. **STUDENT-CENTERED:** Focus on what pupils DO (e.g., "Pupils pair up...", "Pupils interview...").
-4. **NO TEXTBOOKS:** Create original activities using the Learning Standards provided.
-5. **OBJECTIVES:** SMART objectives must relate specifically to the UNIT topic.
+**INSTRUCTIONS FOR OUTPUT:**
 
-FORMATTING OUTPUT (Markdown):
+1. **INTRODUCTION:**
+   - Start exactly with: "Good day teacher! I'm Mr Reyy's assistant. Let's make learning {TOPIC_KEYWORD}, in the best possible way!" 
+   - (Replace {TOPIC_KEYWORD} with the main topic of the unit selected).
 
-## 🎯 Learning Objectives
-(Provide 2 tiers: Main & Complementary based on the LS)
+2. **OBJECTIVES (Clean & Simple):**
+   - Format exactly like this (no extra bolding or prefixes):
+     "By the end of the lesson, pupils will be able to:"
+     1. [Main Objective - SMART]
+     2. [Complementary Objective - SMART]
 
-## 🧩 Pre-Lesson (Induction)
-(Numbered steps for a warm-up game/activity)
+3. **LESSON STEPS (Concise & Embedded Differentiation):**
+   - Structure: **Pre-Lesson**, **Lesson Delivery**, **Post-Lesson**.
+   - Use numbered lists (1., 2., 3.).
+   - **Keep instructions SHORT.** Do NOT include dialogue for simple instructions (e.g., "Teacher pairs pupils").
+   - **INCLUDE SAMPLES ONLY FOR MODELING:** Only provide a sample story/text/sentence for the main activity where the teacher demonstrates.
+   - **EMBED DIFFERENTIATION:** Inside the Lesson Delivery steps, immediately after the relevant step, add differentiation.
+     Format:
+     "10. Pupils begin writing...
+        * **Advanced:** [Instruction e.g., Increase word count]
+        * **Remedial:** [Instruction e.g., Use gap-fill]"
 
-## 🚀 Lesson Delivery (The Core)
-(Numbered steps 1-10. This must be the longest section. Include specific examples of sentences/dialogue pupils will practice.)
-
-### 🛠️ Differentiation Strategy
-* **For Advanced (Cemerlang):** (Specific challenge based on the activity above)
-* **For Remedial (Pemulihan):** (Specific support/scaffolding based on the activity above)
-
-## 📝 Post-Lesson (Closure)
-(Numbered steps for reflection/exit ticket)
-
-## 📊 PBD Assessment Guide
-* **Observation Focus:** (What exactly to watch for during the main activity)
+4. **NO TEXTBOOKS:** Original activities only.
 """
 
 # ==========================================
@@ -95,7 +87,6 @@ FORMATTING OUTPUT (Markdown):
 
 st.set_page_config(page_title="MY CEFR Planner", page_icon="🇲🇾", layout="wide")
 
-# Custom CSS to make it look like the preview
 st.markdown("""
 <style>
     .stButton>button {
@@ -109,45 +100,38 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# --- SIDEBAR INPUTS ---
 with st.sidebar:
     st.header("🇲🇾 Lesson Details")
     
-    # 1. API KEY LOGIC (PRIORITY: Manual -> Secrets -> Input Box)
+    # API KEY LOGIC
     api_key = MANUAL_API_KEY
     if not api_key:
         api_key = st.secrets.get("GEMINI_API_KEY")
     if not api_key:
         api_key = st.text_input("Gemini API Key", type="password")
 
-    # Debug Status
     if api_key:
         st.success("API Key Loaded ✅")
     else:
         st.warning("API Key Missing ❌")
 
-    # 2. Year Selection
+    # SELECTION LOGIC
     year_options = list(SYLLABUS_DB.keys())
     selected_year = st.selectbox("1. Class Level", year_options)
 
-    # 3. Unit Selection (Updates based on Year)
     unit_options = list(SYLLABUS_DB[selected_year].keys())
     selected_unit = st.selectbox("2. Topic / Unit", unit_options)
 
-    # 4. Skill Selection (Updates based on Unit)
     skill_options = list(SYLLABUS_DB[selected_year][selected_unit].keys())
     selected_skill = st.selectbox("3. Focus Skill", skill_options)
 
-    # 5. LS Selection (Updates based on Skill)
     ls_options = SYLLABUS_DB[selected_year][selected_unit][selected_skill]
     selected_ls = st.selectbox("4. Learning Standards", ls_options)
 
-    # 6. Remarks
     notes = st.text_area("Teacher's Remarks", placeholder="e.g., Focus on simple SVO sentences.")
     
     generate_btn = st.button("✨ Generate Lesson Plan")
 
-# --- MAIN PAGE DISPLAY ---
 st.title(f"{selected_unit}")
 st.caption(f"Class: {selected_year} | Skill: {selected_skill} | Standard: {selected_ls}")
 st.divider()
@@ -156,49 +140,38 @@ if generate_btn:
     if not api_key:
         st.error("Please enter your API Key to proceed.")
     else:
-        # Connect to Gemini
         genai.configure(api_key=api_key)
         
-        # The Prompt that combines your Rules + User Selection
         full_prompt = f"""
         {SYSTEM_PROMPT}
         
-        **LESSON CONTEXT:**
+        **CONTEXT:**
         - **Class:** {selected_year}
-        - **Unit/Topic:** {selected_unit}
-        - **Focus Skill:** {selected_skill}
-        - **Learning Standards:** {selected_ls}
-        - **Teacher Notes:** {notes}
+        - **Unit:** {selected_unit}
+        - **Skill:** {selected_skill}
+        - **Standard:** {selected_ls}
+        - **Notes:** {notes}
         
-        GENERATE THE FULL LESSON PLAN NOW.
+        GENERATE THE LESSON PLAN NOW.
         """
         
-        with st.spinner("🤖 Consulting the syllabus... Creating detailed steps..."):
-            
-            # --- AUTO-DISCOVERY MODE ---
-            # Instead of guessing the model name, we ask the API what models are available to THIS key.
+        with st.spinner("🤖 Writing a clean, practical plan..."):
             try:
                 available_model = None
-                
-                # 1. Ask Google: "What models do I have access to?"
                 for m in genai.list_models():
                     if 'generateContent' in m.supported_generation_methods:
                         available_model = m.name
-                        # Prefer Flash or Pro if available
                         if 'flash' in m.name or 'pro' in m.name:
                             break 
                 
-                # 2. If we found a model, use it
                 if available_model:
-                    # st.info(f"Connecting to: {available_model}") # Uncomment for debug
                     model = genai.GenerativeModel(available_model)
                     response = model.generate_content(full_prompt)
                     st.markdown(response.text)
-                    st.success(f"Generated successfully using **{available_model}**!")
+                    st.success(f"Generated by Mr Reyy's Assistant ({available_model})")
                 else:
-                    st.error("❌ Your API Key is valid, but no text-generation models were found. This is very unusual.")
+                    st.error("❌ No available AI models found for this key.")
             
             except Exception as e:
-                st.error("❌ CONNECTION FAILED.")
-                st.write("This usually means the API Key is invalid, copied incorrectly, or has not been activated.")
-                st.warning(f"Error Details: {e}")
+                st.error("❌ Connection Failed. Check API Key.")
+                st.warning(f"Error: {e}")
