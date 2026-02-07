@@ -5,7 +5,7 @@ import google.generativeai as genai
 # 🔑 EMERGENCY KEY SLOT
 # ==========================================
 # If the "Secrets" are not working, paste your API key inside the quotes below.
-MANUAL_API_KEY = "AIzaSyCEJVCC_ExaT0R5lNvzP-ZsuAIjFC98WYU"
+MANUAL_API_KEY = ""
 
 # ==========================================
 # 📂 PART 1: THE SYLLABUS VAULT
@@ -67,16 +67,31 @@ TONE: Professional, concise, and ready to copy-paste.
      1. [Main Objective - SMART]
      2. [Complementary Objective - SMART]
 
-3. **LESSON STEPS (Concise & Embedded Differentiation):**
-   - Structure: **Pre-Lesson**, **Lesson Delivery**, **Post-Lesson**.
-   - Use numbered lists (1., 2., 3.).
-   - **Keep instructions SHORT.** Do NOT include dialogue for simple instructions (e.g., "Teacher pairs pupils").
-   - **INCLUDE SAMPLES ONLY FOR MODELING:** Only provide a sample story/text/sentence for the main activity where the teacher demonstrates.
-   - **EMBED DIFFERENTIATION:** Inside the Lesson Delivery steps, immediately after the relevant step, add differentiation.
-     Format:
-     "10. Pupils begin writing...
-        * **Advanced:** [Instruction e.g., Increase word count]
-        * **Remedial:** [Instruction e.g., Use gap-fill]"
+3. **LESSON STEPS (Strict Formatting):**
+   - **IMPORTANT:** Restart numbering at '1.' for EACH section (Pre-Lesson, Lesson Delivery, Post-Lesson).
+   - Ensure every step is on its own new line.
+   - **Structure:**
+     
+     **Pre-Lesson**
+     1. [Step 1]
+     2. [Step 2]
+     ...
+
+     **Lesson Delivery**
+     1. [Step 1]
+     2. [Step 2]
+        * *Sample:* [Insert sample text here if needed]
+     3. [Step 3]
+        * **Advanced:** [Differentiation instruction]
+        * **Remedial:** [Differentiation instruction]
+     ...
+
+     **Post-Lesson**
+     1. [Step 1]
+     ...
+
+   - **Keep instructions SHORT.** Do NOT include dialogue for simple instructions.
+   - **INCLUDE SAMPLES ONLY FOR MODELING.**
 
 4. **NO TEXTBOOKS:** Original activities only.
 """
