@@ -4,11 +4,11 @@ import google.generativeai as genai
 # ==========================================
 # 🔑 EMERGENCY KEY SLOT
 # ==========================================
-# If the "Secrets" are not working, paste your API key inside the quotes below.
-MANUAL_API_KEY = "AIzaSyCEJVCC_ExaT0R5lNvzP-ZsuAIjFC98WYU"
+# LEAVE THIS EMPTY. Use Streamlit Secrets instead.
+MANUAL_API_KEY = ""
 
 # ==========================================
-# 📂 PART 1: THE SYLLABUS VAULT (UPDATED WITH YEAR 1)
+# 📂 PART 1: THE SYLLABUS VAULT
 # ==========================================
 SYLLABUS_DB = {
     "Year 6": {
@@ -245,13 +245,14 @@ st.markdown("""
 with st.sidebar:
     st.header("🇲🇾 Lesson Details")
     
-    # API KEY LOGIC
+    # API KEY LOGIC (PRIORITY: Manual -> Secrets -> Input Box)
     api_key = MANUAL_API_KEY
     if not api_key:
         api_key = st.secrets.get("GEMINI_API_KEY")
     if not api_key:
         api_key = st.text_input("Gemini API Key", type="password")
 
+    # Debug Status
     if api_key:
         st.success("API Key Loaded ✅")
     else:
@@ -261,15 +262,12 @@ with st.sidebar:
     year_options = list(SYLLABUS_DB.keys())
     selected_year = st.selectbox("1. Class Level", year_options)
 
-    # Dynamic Units based on Year
     unit_options = list(SYLLABUS_DB[selected_year].keys())
     selected_unit = st.selectbox("2. Topic / Unit", unit_options)
 
-    # Dynamic Skills based on Unit
     skill_options = list(SYLLABUS_DB[selected_year][selected_unit].keys())
     selected_skill = st.selectbox("3. Focus Skill", skill_options)
 
-    # Dynamic LS based on Skill
     ls_options = SYLLABUS_DB[selected_year][selected_unit][selected_skill]
     selected_ls = st.selectbox("4. Learning Standards", ls_options)
 
