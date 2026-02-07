@@ -75,6 +75,7 @@ TONE: Professional, concise, and ready to copy-paste.
    - **NO PARAGRAPHS:** Never group steps together.
    - **NUMBERING:** Use **bold numbers** manually typed out (e.g., **1.**) followed by the step.
    - **SPACING:** You MUST leave an empty line between every step.
+   - **DIFFERENTIATION/SAMPLES:** Must be on a NEW LINE with an empty line before them.
    - Restart numbering at '1.' for EACH section.
    
    **Strict Layout Template:**
@@ -92,10 +93,13 @@ TONE: Professional, concise, and ready to copy-paste.
    **2.** [Step 2 instruction]
    
    **3.** [Step 3 instruction]
+      
       * *Sample:* "..."
    
    **4.** [Step 4 instruction]
+      
       * **Advanced:** ...
+      
       * **Remedial:** ...
 
    **Post-Lesson**
