@@ -2,6 +2,13 @@ import streamlit as st
 import google.generativeai as genai
 
 # ==========================================
+# 🔑 EMERGENCY KEY SLOT
+# ==========================================
+# If the "Secrets" are not working, paste your API key inside the quotes below.
+# Example: MANUAL_API_KEY = "AIzaSy..."
+MANUAL_API_KEY = "AIzaSyCEJVCC_ExaT0R5lNvzP-ZsuAIjFC98WYU"
+
+# ==========================================
 # 📂 PART 1: THE SYLLABUS VAULT (PASTE YOUR DATA HERE)
 # ==========================================
 # This is where you paste your SOW. 
@@ -106,10 +113,18 @@ st.markdown("""
 with st.sidebar:
     st.header("🇲🇾 Lesson Details")
     
-    # 1. API Key (Auto-detects from secrets or asks user)
-    api_key = st.secrets.get("GEMINI_API_KEY")
+    # 1. API KEY LOGIC (PRIORITY: Manual -> Secrets -> Input Box)
+    api_key = MANUAL_API_KEY
+    if not api_key:
+        api_key = st.secrets.get("GEMINI_API_KEY")
     if not api_key:
         api_key = st.text_input("Gemini API Key", type="password")
+
+    # Debug Status
+    if api_key:
+        st.success("API Key Loaded ✅")
+    else:
+        st.warning("API Key Missing ❌")
 
     # 2. Year Selection
     year_options = list(SYLLABUS_DB.keys())
@@ -159,20 +174,41 @@ if generate_btn:
         """
         
         with st.spinner("🤖 Consulting the syllabus... Creating detailed steps..."):
-            try:
-                # Try the newest, fastest model first
-                model = genai.GenerativeModel('gemini-1.5-flash')
-                response = model.generate_content(full_prompt)
-                st.markdown(response.text)
-                st.success("Generated with Gemini Flash! (Fastest)")
-                
-            except Exception as e:
-                # If 'Flash' is not found (404), switch to 'Pro' automatically
+            # List of models to try in order of preference (Auto-Fallback)
+            model_candidates = [
+                'gemini-1.5-flash',
+                'gemini-1.5-pro',
+                'gemini-pro',
+                'gemini-1.0-pro'
+            ]
+            
+            success = False
+            error_log = []
+
+            for model_name in model_candidates:
                 try:
-                    model = genai.GenerativeModel('gemini-pro')
+                    model = genai.GenerativeModel(model_name)
                     response = model.generate_content(full_prompt)
                     st.markdown(response.text)
-                    st.success("Generated with Gemini Pro! (Reliable Backup)")
-                except Exception as e2:
-                    st.error(f"Error: {e2}")
-                    st.info("Check your API key. If you just created it, wait 5 minutes.")
+                    st.success(f"Generated successfully using **{model_name}**!")
+                    success = True
+                    break # Stop if successful
+                except Exception as e:
+                    error_log.append(f"{model_name}: {str(e)}")
+            
+            if not success:
+                st.error("⚠️ All AI models failed. This usually means the API Key is invalid or the server needs a restart.")
+                with st.expander("See Error Details"):
+                    for err in error_log:
+                        st.warning(err)
+                
+                # Diagnostic: Check what models are ACTUALLY available to this key
+                try:
+                    st.info("Attempting to list available models for your key...")
+                    available = []
+                    for m in genai.list_models():
+                        if 'generateContent' in m.supported_generation_methods:
+                            available.append(m.name)
+                    st.write("Your API Key has access to:", available)
+                except Exception as list_err:
+                    st.error(f"Could not even list models. Your API Key might be incorrect. Error: {list_err}")
