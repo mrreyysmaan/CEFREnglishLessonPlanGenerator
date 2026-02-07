@@ -5,7 +5,7 @@ import google.generativeai as genai
 # 🔑 EMERGENCY KEY SLOT
 # ==========================================
 # If the "Secrets" are not working, paste your API key inside the quotes below.
-MANUAL_API_KEY = ""
+MANUAL_API_KEY = "AIzaSyCEJVCC_ExaT0R5lNvzP-ZsuAIjFC98WYU"
 
 # ==========================================
 # 📂 PART 1: THE SYLLABUS VAULT
