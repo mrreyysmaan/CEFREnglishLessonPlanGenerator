@@ -5,7 +5,7 @@ import google.generativeai as genai
 # 🔑 EMERGENCY KEY SLOT
 # ==========================================
 # If the "Secrets" are not working, paste your API key inside the quotes below.
-MANUAL_API_KEY = "AIzaSyCEJVCC_ExaT0R5lNvzP-ZsuAIjFC98WYU"
+MANUAL_API_KEY = ""
 
 # ==========================================
 # 📂 PART 1: THE SYLLABUS VAULT
@@ -62,10 +62,14 @@ TONE: Professional, concise, and ready to copy-paste.
    - (Replace {TOPIC_KEYWORD} with the main topic of the unit selected).
 
 2. **OBJECTIVES (Clean & Simple):**
-   - Format exactly like this (no extra bolding or prefixes):
+   - Format exactly like this:
      "By the end of the lesson, pupils will be able to:"
-     1. [Main Objective - SMART]
-     2. [Complementary Objective - SMART]
+     
+     **1.** [Main Objective - SMART]
+     
+     **2.** [Complementary Objective - SMART]
+   - Use **bold numbers** manually typed out (e.g., **1.**).
+   - Leave an empty line between objectives.
 
 3. **LESSON STEPS (CRITICAL FORMATTING - COPY/PASTE FRIENDLY):**
    - **NO PARAGRAPHS:** Never group steps together.
