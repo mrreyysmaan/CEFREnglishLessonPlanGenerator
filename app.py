@@ -12,7 +12,7 @@ MANUAL_API_KEY = ""
 # ==========================================
 SYLLABUS_DB = {
     "Year 1": {
-        "Unit 0: Friends": {
+        "Unit 0: Friends (World of Self, Family and Friends)": {
             "Speaking": [
                 "2.1.4 Greet, say goodbye, and express thanks & 2.3.1 Introduce self to an audience",
                 "2.1.1 Give very basic personal information & 3.1.3 Blend phonemes (CVC, CCVC)",
@@ -39,7 +39,7 @@ SYLLABUS_DB = {
                 "5.1.1 Demonstrate appreciation (chants/raps) & 2.1.5 Name or describe objects"
             ]
         },
-        "Unit 1: At School": {
+        "Unit 1: At School (World of Self, Family and Friends)": {
             "Listening": [
                 "1.2.1 Understand main idea & 2.1.5 Name or describe objects",
                 "1.3.1 Predict words & 1.2.4 Understand instructions",
@@ -81,7 +81,7 @@ SYLLABUS_DB = {
                 "4.2.4 Name or describe objects & 3.2.4 Name or describe objects"
             ]
         },
-        "Unit 2: Let's Play!": {
+        "Unit 2: Let's Play! (World of Stories)": {
             "Speaking": [
                 "2.1.5 Name or describe objects & 1.2.1 Understand main idea",
                 "2.1.1 Give personal info & 4.2.1 Give personal info",
@@ -123,7 +123,7 @@ SYLLABUS_DB = {
                 "4.3.2 Use capital letters & 4.2.1 Give personal info"
             ]
         },
-        "Unit 3: Pet Show": {
+        "Unit 3: Pet Show (World of Knowledge)": {
             "Listening": [
                 "1.2.1 Understand main idea & 2.1.5 Name or describe objects",
                 "1.2.2 Understand specific info & 2.1.5 Name or describe objects"
@@ -132,7 +132,7 @@ SYLLABUS_DB = {
             "Speaking": ["2.1.2 Find out personal info & 2.1.3 Express likes/dislikes"],
             "Reading": ["3.1.3 Blend phonemes & 3.3.1 Read simple games"]
         },
-        "Unit 4: Lunchtime": {
+        "Unit 4: Lunchtime (World of Knowledge)": {
             "Speaking": [
                 "2.1.5 Name or describe objects & 1.2.1 Understand main idea",
                 "2.1.5 Name or describe objects & 3.2.2 Understand specific info",
@@ -190,12 +190,12 @@ SYLLABUS_DB = {
         }
     },
     "Year 2": {
-        "Unit 0: Introduction": {
+        "Unit 0: Introduction (World of Self, Family and Friends)": {
             "Writing": [
                 "4.2.1 Ask for and give basic personal information using basic questions and statements & 2.3.1 Introduce self and others to an audience using fixed phrases"
             ]
         },
-        "Unit 5: Free Time": {
+        "Unit 5: Free Time (World of Self, Family and Friends)": {
             "Listening": [
                 "1.2.1 Understand with support the main idea of simple sentences & 2.1.1 Give simple personal information using basic statements",
                 "1.2.2 Understand with support specific information and details of simple sentences & 2.1.1 Give simple personal information using basic statements",
@@ -231,7 +231,7 @@ SYLLABUS_DB = {
                 "4.3.1 Use capital letters and full stops appropriately in guided writing at sentence level & 3.2.4 Use a picture dictionary to find, list and categorise words from Year 2 topics and themes"
             ]
         },
-        "Unit 6: The old house": {
+        "Unit 6: The old house (World of Stories)": {
             "Listening": [
                 "1.2.2 Understand with support specific information and details of simple sentences & 4.3.2 Spell a narrow range of familiar high frequency words accurately in guided writing",
                 "1.2.2 Understand with support specific information and details of simple sentences & 2.2.1 Keep interaction going in short exchanges by using suitable non-verbal responses",
@@ -273,7 +273,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively and intelligibly through creating simple short chants or raps & 2.1.3 Give a short sequence of basic instructions"
             ]
         },
-        "Unit 7: Get dressed!": {
+        "Unit 7: Get dressed! (World of Self, Family and Friends)": {
             "Listening": [
                 "1.2.2 Understand with support specific information and details of simple sentences & 3.3.1 Read and enjoy simple print and digital games at sentence level",
                 "1.2.5 Understand an increased range of short supported questions & 1.3.1 Understand the message the teacher or classmate is communicating by using visual clues",
@@ -318,7 +318,7 @@ SYLLABUS_DB = {
                 "5.1.2 Say the words in simple texts, and sing simple songs & 2.1.5 Describe objects using suitable words and phrases"
             ]
         },
-        "Unit 8: The robot": {
+        "Unit 8: The robot (World of Stories)": {
             "Speaking": [
                 "2.1.3 Give a short sequence of basic instructions & 1.2.2 Understand with support specific information and details of simple sentences",
                 "3.1.3 Blend phonemes (CVC, CCVC, CVCV, CCV) & 3.1.4 Segment phonemes (CVC, CCVC, CVCV, CCV)",
@@ -368,7 +368,7 @@ SYLLABUS_DB = {
                 "3.2.2 Understand specific information and details of simple sentences & 4.3.2 Spell a narrow range of familiar high frequency words accurately in guided writing"
             ]
         },
-        "Unit 9: At the beach": {
+        "Unit 9: At the beach (World of Knowledge)": {
             "Listening": [
                 "1.2.1 Understand with support the main idea of simple sentences & 1.3.1 Understand the message the teacher or classmate is communicating",
                 "1.2.2 Understand with support specific information and details of simple sentences & 4.2.5 Connect words and phrases using basic coordinating conjunctions",
@@ -414,7 +414,7 @@ SYLLABUS_DB = {
         }
     },
     "Year 3": {
-        "Unit 1: Welcome!": {
+        "Unit 1: Welcome! (World of Self, Family and Friends)": {
             "Writing": [
                 "1.3.1 Guess the meaning of unfamiliar words by using visual clues & 2.1.5 Describe people and objects using suitable words and phrases",
                 "4.2.4 Describe people and objects using suitable words and phrases & 4.1.2 Begin to use cursive handwriting in a limited range of written work",
@@ -442,7 +442,7 @@ SYLLABUS_DB = {
                 "1.2.5 Understand a wide range of short supported questions & 2.2.2 Ask for attention or help from a teacher or classmate by using suitable questions"
             ]
         },
-        "Unit 2: Every day": {
+        "Unit 2: Every day (World of Self, Family and Friends)": {
             "Listening": [
                 "1.2.2 Understand with support specific information and details of short simple texts & 1.3.1 Guess the meaning of unfamiliar words by using visual clues",
                 "1.2.2 Understand with support specific information and details of short simple texts & 1.2.5 Understand a wide range of short supported questions",
@@ -470,7 +470,7 @@ SYLLABUS_DB = {
                 "5.2.1 Name people, things, actions, or places of interest in texts & 2.1.5 Describe people and objects using suitable words and phrases"
             ]
         },
-        "Unit 3: Right now": {
+        "Unit 3: Right now (World of Self, Family and Friends)": {
             "Listening": [
                 "1.2.2 Understand with support specific information and details of short simple texts & 1.3.1 Guess the meaning of unfamiliar words by using visual clues",
                 "1.2.2 Understand with support specific information and details of short simple texts & 1.3.1 Guess the meaning of unfamiliar words by using visual clues",
@@ -498,7 +498,7 @@ SYLLABUS_DB = {
                 "3.2.1 Understand the main idea of short simple texts & 4.3.2 Spell a narrow range of familiar high frequency words accurately"
             ]
         },
-        "Unit 4: Year in, year out": {
+        "Unit 4: Year in, year out (World of Knowledge)": {
             "Listening": [
                 "1.2.1 Understand with support the main idea of short simple texts & 2.2.1 Keep interaction going in short exchanges",
                 "1.2.2 Understand with support specific information and details of short simple sentences & 2.1.2 Find out about and describe basic everyday routines",
@@ -526,7 +526,7 @@ SYLLABUS_DB = {
                 "3.2.2 Understand specific information and details of short simple sentences & 3.3.1 Read and enjoy A1 fiction/non-fiction print and digital texts"
             ]
         },
-        "Unit 5: My new house": {
+        "Unit 5: My new house (World of Self, Family and Friends)": {
             "Speaking": [
                 "1.2.2 Understand with support specific information & 1.2.1 Understand with support the main idea",
                 "2.1.5 Describe people and objects using suitable words and phrases & 1.2.5 Understand a wild range of short supported questions",
@@ -554,7 +554,7 @@ SYLLABUS_DB = {
                 "1.1.1 Recognise and reproduce with support a range of target language phonemes & 2.1.5 Describe people and objects using suitable words and phrases"
             ]
         },
-        "Unit 6: Food, please!": {
+        "Unit 6: Food, please! (World of Self, Family and Friends)": {
             "Listening": [
                 "1.2.2 Understand with support specific information and details of short simple texts & 2.1.1 Ask about and express basic opinions",
                 "1.2.5 Understand a wide range of short supported questions & 1.2.2 Understand with support specific information and details of short simple texts",
@@ -582,7 +582,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively and intelligibly through creating simple action songs & 3.3.1 Read and enjoy A1 fiction/non-fiction print and digital texts of interest"
             ]
         },
-        "Unit 7: Out and about": {
+        "Unit 7: Out and about (World of Self, Family and Friends)": {
             "Listening": [
                 "1.2.2 Understand with support specific information and details of short simple texts & 1.3.1 Guess the meaning of unfamiliar words by using visual clues",
                 "1.2.1 Understand with support the main idea of short simple texts & 4.2.4 Describe people and objects using suitable words and phrases",
@@ -610,7 +610,7 @@ SYLLABUS_DB = {
                 "5.2.1 Ask and answer simple questions about characters & 2.1.4 Ask about, make and respond to simple predictions"
             ]
         },
-        "Unit 8: Where were you yesterday?": {
+        "Unit 8: Where were you yesterday? (World of Self, Family and Friends)": {
             "Listening": [
                 "1.2.2 Understand with support specific information and details of short simple texts & 1.2.5 Understand a wide range of short supported questions",
                 "1.2.2 Understand with support specific information and details of short simple texts & 2.1.1 Give a short sequence of basic directions",
@@ -638,7 +638,7 @@ SYLLABUS_DB = {
                 "5.2.1 Ask and answer simple questions about characters & 3.2.3 Guess the meaning of unfamiliar words from clues provided by visuals and the topic"
             ]
         },
-        "Unit 9: On holiday": {
+        "Unit 9: On holiday (World of Self, Family and Friends)": {
             "Listening": [
                 "1.2.1 Understand with support the main idea of short simple texts & 2.1.5 Describe people and objects using suitable words and phrases",
                 "1.2.2 Understand with support specific information and details of short simple texts & 2.1.5 Describe people and objects using suitable words and phrases",
@@ -666,7 +666,7 @@ SYLLABUS_DB = {
                 "5.2.1 Ask and answer simple questions about characters & 3.3.1 Read and enjoy A1 fiction/non-fiction print and digital texts of interest"
             ]
         },
-        "Unit 10: The world around us": {
+        "Unit 10: The world around us (World of Knowledge)": {
             "Listening": [
                 "1.2.2 Understand with support specific information and details of short simple texts & 1.1.1 Recognise and reproduce with support a range of target language phonemes",
                 "1.2.2 Understand with support specific information and details of short simple texts & 2.1.5 Describe people and objects using suitable words and phrases",
@@ -696,11 +696,11 @@ SYLLABUS_DB = {
         }
     },
     "Year 4": {
-        "Unit 1: Where are you from?": {
+        "Unit 1: Where are you from? (World of Self, Family and Friends)": {
             "Listening": [
                 "1.2.2 Understand with support specific information and details of longer simple texts & 1.1.1 Recognise and reproduce with support a wide range of target language phonemes",
                 "1.2.2 Understand with support specific information and details of longer simple texts & 1.1.1 Recognise and reproduce with support a wide range of target language phonemes",
-                "1.2.3 Understand with support short simple narratives on a range of familiar topics & 1.1.1 Recognise and reproduce with support a wide range of target language phonemes"
+                "1.2.3 Understand with support short simple narratives on range of familiar topics & 1.1.1 Recognise and reproduce with support a wide range of target language phonemes"
             ],
             "Speaking": [
                 "2.1.5 Describe people and objects using suitable words and phrases & 1.2.4 Understand longer supported classroom instructions",
@@ -723,7 +723,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively through creating simple action songs & 4.2.4 Describe people and objects using suitable statements"
             ]
         },
-        "Unit 2: My Week": {
+        "Unit 2: My Week (World of Self, Family and Friends)": {
             "Listening": [
                 "1.2.2 Understand with support specific information and details of longer simple texts & 1.1.1 Recognise and reproduce with support a wide range of target language phonemes",
                 "1.2.5 Understand longer supported questions & 1.2.3 Understand with support short simple narratives on a range of familiar topics",
@@ -750,7 +750,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively through creating simple action songs & 3.3.1 Read and enjoy A1 fiction/non-fiction print and digital texts"
             ]
         },
-        "Unit 3: In the Past": {
+        "Unit 3: In the Past (World of Knowledge)": {
             "Listening": [
                 "1.2.1 Understand with support the main idea of longer simple texts & 1.2.2 Understand with support specific information and details of longer simple texts",
                 "1.2.5 Understand longer supported questions & 2.1.2 Find out about and describe experiences in the past",
@@ -777,7 +777,7 @@ SYLLABUS_DB = {
                 "5.2.1 Say in simple words and phrases how a text makes them feel & 2.1.4 Give reasons for simple predictions"
             ]
         },
-        "Unit 4: Celebrations": {
+        "Unit 4: Celebrations (World of Knowledge)": {
             "Listening": [
                 "1.2.1 Understand with support the main idea of longer simple texts & 3.2.3 Guess the meaning of unfamiliar words from clues provided by title and topic",
                 "1.2.3 Understand with support short simple narratives & 1.2.2 Understand with support specific information and details of longer simple texts",
@@ -804,7 +804,7 @@ SYLLABUS_DB = {
                 "5.2.1 Say in simple words and phrases how a text makes them feel & 4.2.4 Describe people and objects using suitable statements"
             ]
         },
-        "Unit 5: Eating right": {
+        "Unit 5: Eating right (World of Self, Family and Friends)": {
             "Listening": [
                 "1.3.1 Guess the meaning of unfamiliar words & 1.1.1 Recognise and reproduce with support a wide range of target language phonemes",
                 "1.2.5 Understand longer supported questions & 1.2.2 Understand with support specific information and details of longer simple texts",
@@ -831,7 +831,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively through creating picture stories & 2.1.1 Explain and give reasons for basic opinions"
             ]
         },
-        "Unit 6: Getting around": {
+        "Unit 6: Getting around (World of Self, Family and Friends)": {
             "Listening": [
                 "1.2.5 Understand longer supported questions & 1.2.2 Understand with support specific information and details of longer simple texts",
                 "1.2.2 Understand with support specific information and details of longer simple texts & 4.2.3 Describe basic everyday routines"
@@ -853,7 +853,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively through creating simple picture stories & 4.3.3 Produce a plan or draft of one paragraph"
             ]
         },
-        "Unit 7: Helping out": {
+        "Unit 7: Helping out (World of Self, Family and Friends)": {
             "Listening": [
                 "1.2.2 Understand with support specific information and details of longer simple texts & 3.2.3 Guess the meaning of unfamiliar words",
                 "1.2.2 Understand with support specific information and details of longer simple texts & 2.1.5 Describe people and objects using suitable statements",
@@ -880,7 +880,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively through creating simple picture stories & 2.1.4 Give reasons for simple predictions"
             ]
         },
-        "Unit 8: Amazing animals": {
+        "Unit 8: Amazing animals (World of Knowledge)": {
             "Listening": [
                 "1.2.5 Understand longer supported questions & 1.3.1 Guess the meaning of unfamiliar words",
                 "1.3.1 Guess the meaning of unfamiliar words & 2.1.4 Give reasons for simple predictions",
@@ -907,7 +907,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively through creating simple picture stories & 4.3.2 Spell most high frequency words accurately in guided writing"
             ]
         },
-        "Unit 9: Get active!": {
+        "Unit 9: Get active! (World of Self, Family and Friends)": {
             "Listening": [
                 "1.2.2 Understand with support specific information and details of longer simple texts & 1.2.1 Understand with support the main idea of longer simple texts",
                 "1.2.2 Understand with support specific information and details of longer simple texts & 4.3.3 Produce a plan or draft of one paragraph",
@@ -934,7 +934,7 @@ SYLLABUS_DB = {
                 "5.2.1 Say in simple words and phrases how a text makes them feel & 4.1.2 Use cursive handwriting in written work"
             ]
         },
-        "Unit 10: What’s the matter?": {
+        "Unit 10: What’s the matter? (World of Self, Family and Friends)": {
             "Listening": [
                 "1.3.1 Guess the meaning of unfamiliar words & 1.1.1 Recognise and reproduce with support a wide range of target language phonemes",
                 "1.2.2 Understand with support specific information and details of longer simple texts & 2.1.1 Explain and give reasons for basic opinions"
@@ -961,7 +961,7 @@ SYLLABUS_DB = {
         }
     },
     "Year 5": {
-        "Starter Unit: Free time": {
+        "Starter Unit: Free time (World of Self, Family and Friends)": {
             "Listening": [
                 "1.2.1 Understand with support the main idea of longer simple texts & 3.2.1 Understand the main idea of simple texts of two paragraphs or more",
                 "1.1.1 Recognise and reproduce with little or no support a wide range of target language phonemes & 3.2.1 Understand the main idea of simple texts of two paragraphs or more",
@@ -988,7 +988,7 @@ SYLLABUS_DB = {
                 "5.2.1 Explain in simple language why they like or dislike an event & 1.2.2 Understand with support specific information and details"
             ]
         },
-        "Unit 1: Towns and cities": {
+        "Unit 1: Towns and cities (World of Knowledge)": {
             "Listening": [
                 "1.2.1 Understand with support the main idea of longer simple texts & 4.2.4 Describe people, places and objects using suitable statements",
                 "1.2.2 Understand with support specific information and details & 4.3.2 Spell a range of high frequency words accurately",
@@ -1017,7 +1017,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively and intelligibly through creating simple roleplays & 2.1.5 Describe people, places and objects using suitable statements"
             ]
         },
-        "Unit 2: Days": {
+        "Unit 2: Days (World of Self, Family and Friends)": {
             "Listening": [
                 "1.2.1 Understand with support the main idea of longer simple texts & 4.3.2 Spell a range of high frequency words accurately",
                 "1.2.2 Understand with support specific information and details & 2.1.4 Ask about and describe future plans",
@@ -1047,7 +1047,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively and intelligibly through creating simple action songs & 3.3.1 Read and enjoy A1 fiction/non-fiction print and digital texts"
             ]
         },
-        "Unit 3: Wild Life": {
+        "Unit 3: Wild Life (World of Knowledge)": {
             "Listening": [
                 "1.2.2 Understand with support specific information and details & 2.2.1 Keep interaction going in short exchanges",
                 "1.2.1 Understand with support the main idea of longer simple texts & 2.2.1 Keep interaction going in short exchanges",
@@ -1076,7 +1076,7 @@ SYLLABUS_DB = {
                 "5.2.1 Explain in simple language why they like or dislike an event & 2.1.5 Describe people, places and objects using suitable statements"
             ]
         },
-        "Unit 4: Learning World": {
+        "Unit 4: Learning World (World of Self, Family and Friends)": {
             "Listening": [
                 "1.3.1 Guess the meaning of unfamiliar words from clues & 3.3.1 Read and enjoy A2 fiction/ non-fiction print and digital texts",
                 "1.2.5 Understand a sequence of supported questions & 1.2.2 Understand with support specific information and details",
@@ -1106,7 +1106,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively and intelligibly through creating simple roleplays & 4.3.3 Produce a plan or draft of one or two paragraphs"
             ]
         },
-        "Unit 5: Food and health": {
+        "Unit 5: Food and Health (World of Knowledge)": {
             "Listening": [
                 "1.2.1 Understand with support the main idea of longer simple texts & 1.1.1 Recognise and reproduce with little or no support a wide range of target language phonemes",
                 "1.2.3 Understand with support longer simple narratives & 1.2.5 Understand a sequence of supported questions",
@@ -1143,7 +1143,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively through creating picture stories & 2.1.1 Explain and give reasons for basic opinions"
             ]
         },
-        "Unit 6: Sport": {
+        "Unit 6: Sport (World of Knowledge)": {
             "Listening": [
                 "1.3.1 Guess the meaning of unfamiliar words from clues & 3.2.4 Use with support familiar print and digital resources to check meaning",
                 "1.2.3 Understand with support longer simple narratives & 3.2.4 Use with support familiar print and digital resources to check meaning",
@@ -1170,7 +1170,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively and intelligibly through creating simple roleplays & 2.3.1 Narrate short basic stories and events"
             ]
         },
-        "Unit 7: Growing Up": {
+        "Unit 7: Growing Up (World of Knowledge)": {
             "Listening": [
                 "1.1.1 Recognise and reproduce with little or no support & 2.1.1 Give detailed information about themselves",
                 "1.2.2 Understand with support specific information and details & 1.2.5 Understand a sequence of supported questions",
@@ -1202,7 +1202,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively and intelligibly through creating simple roleplays & 4.2.4 Describe people, places and objects using suitable statements"
             ]
         },
-        "Unit 8: Going Away": {
+        "Unit 8: Going Away (World of Knowledge)": {
             "Listening": [
                 "1.3.1 Guess the meaning of unfamiliar words from clues & 1.2.2 Understand with support specific information and details",
                 "1.3.1 Guess the meaning of unfamiliar words from clues & 1.2.3 Understand with support longer simple narratives",
@@ -1236,14 +1236,14 @@ SYLLABUS_DB = {
         }
     },
     "Year 6": {
-        "Unit 0: Welcome": {
+        "Unit 0: Welcome (World of Self, Family and Friends)": {
             "Reading": ["3.2.1 Understand specific information and details of simple longer texts & 4.2.4 Describe personality"],
             "Writing": ["4.2.1 Give detailed information about themselves and others & 2.1.1 Give detailed information about themselves and others"],
             "Listening": ["1.2.2 Understand specific information and details & 1.1.1 Recognise and reproduce independently a wide range of target language phonemes"],
             "Speaking": ["4.2.1 Give detailed information about themselves and others & 2.1.1 Give detailed information about themselves and others"],
             "Language Arts": ["5.3.1 Respond imaginatively and intelligibly through creating simple stories and simple poems & 1.1.1 Recognise and reproduce independently a wide range of target language phonemes"]
         },
-        "Unit 1: It's an Emergency": {
+        "Unit 1: It's an Emergency (World of Knowledge)": {
             "Reading": [
                 "3.2.3 Guess the meaning of unfamiliar words from clues & 3.2.2 Understand specific information and details of simple longer texts",
                 "3.2.2 Understand specific information and details of simple longer texts & 4.3.1 Use capital letters, full stops, commas in lists, question marks, and speech marks appropriately"
@@ -1265,7 +1265,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively and intelligibly through creating simple stories and simple poems & 4.3.2 Spell most high frequency words accurately"
             ]
         },
-        "Unit 2: Life in the Past": {
+        "Unit 2: Life in the Past (World of Knowledge)": {
             "Reading": [
                 "3.2.3 Guess the meaning of unfamiliar words from clues & 3.2.1 Understand the main idea of simple longer texts",
                 "3.2.1 Understand the main idea of simple longer texts & 3.2.2 Understand specific information and details of simple longer texts",
@@ -1291,7 +1291,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively and intelligibly through creating simple stories and simple poems & 2.1.1 Give detailed information about themselves and others"
             ]
         },
-        "Unit 3: Adventure Time": {
+        "Unit 3: Adventure Time (World of Self, Family and Friends)": {
             "Reading": [
                 "3.2.1 Understand the main idea of simple longer texts & 3.2.2 Understand specific information and details of simple longer texts",
                 "3.2.2 Understand specific information and details of simple longer texts & 4.3.3 Produce a plan or draft of two paragraphs or more"
@@ -1318,7 +1318,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively and intelligibly through creating simple stories and simple poems & 3.2.2 Understand specific information and details of simple longer texts"
             ]
         },
-        "Unit 4: Cool Jobs": {
+        "Unit 4: Cool Jobs (World of Self, Family and Friends)": {
             "Reading": [
                 "3.2.3 Guess the meaning of unfamiliar words from clues & 3.2.4 Use with some support familiar print and digital resources",
                 "2.1.1 Give detailed information about themselves and others & 1.2.5 Understand more complex supported questions",
@@ -1345,7 +1345,7 @@ SYLLABUS_DB = {
                 "5.2.1 Describe in simple language a character’s actions or feelings & 4.3.2 Spell most high frequency words accurately"
             ]
         },
-        "Unit 5: Getting Around": {
+        "Unit 5: Getting Around (World of Stories)": {
             "Reading": [
                 "3.3.1 Read and enjoy A2 fiction/nonfiction texts & 3.2.1 Understand the main idea of simple longer texts",
                 "3.2.1 Understand the main idea of simple longer texts & 2.3.1 Narrate short stories, events and experiences",
@@ -1372,7 +1372,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively and intelligibly through creating simple stories and simple poems & 4.2.1 Give detailed information about themselves and others"
             ]
         },
-        "Unit 6: How is it made?": {
+        "Unit 6: How is it made? (World of Knowledge)": {
             "Reading": [
                 "3.2.4 Use with some support familiar print and digital resources & 3.2.1 Understand the main idea of simple longer texts",
                 "3.2.2 Understand Specific information and details of simple longer texts & 4.3.2 Spell most high frequency words accurately",
@@ -1398,7 +1398,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively and intelligibly through creating simple stories and simple poems & 4.3.2 Spell most high frequency words accurately"
             ]
         },
-        "Unit 7: Music & Song": {
+        "Unit 7: Music & Song (World of Self, Family and Friends)": {
             "Reading": [
                 "3.2.1 Understand the main idea of simple longer texts & 1.2.1 Understand with little or no support the main idea",
                 "3.2.1 Understand the main idea of simple longer texts & 1.1.1 Recognise and Reproduce independently a wide range of target language phonemes",
@@ -1425,7 +1425,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively and intelligibly through creating simple stories and simple poems & 4.3.2 Spell most high frequency words accurately"
             ]
         },
-        "Unit 8: Tell me a story": {
+        "Unit 8: Tell me a story (World of Stories)": {
             "Reading": [
                 "3.2.1 Understand the main idea of simple longer texts & 3.3.1 Read and enjoy A2 fiction/nonfiction print and digital texts",
                 "3.2.2 Understand Specific information and details of simple longer texts & 3.2.1 Understand the main idea of simple longer texts",
@@ -1451,7 +1451,7 @@ SYLLABUS_DB = {
                 "5.3.1 Respond imaginatively and intelligibly through creating simple stories and simple poems & 4.2.5 Connect sentences into two coherent paragraphs or more"
             ]
         },
-        "Unit 9: What’s your opinion?": {
+        "Unit 9: What’s your opinion? (World of Knowledge)": {
             "Reading": [
                 "3.2.1 Understand the main idea of simple longer texts & 3.2.3 Guess the meaning of unfamiliar words",
                 "3.2.2 Understand Specific information and details of simple longer texts & 3.2.1 Understand the main idea of simple longer texts",
@@ -1478,7 +1478,7 @@ SYLLABUS_DB = {
                 "5.2.1 Describe in simple language a character’s actions or feelings & 2.1.1 Give detailed information about themselves and others"
             ]
         },
-        "Unit 10: It’s a mystery!": {
+        "Unit 10: It’s a mystery! (World of Stories)": {
             "Reading": [
                 "3.2.2 Understand Specific information and details of simple longer texts & 2.1.5 Ask about and describe personality",
                 "2.2.1 Keep interaction going in short exchanges & 3.2.2 Understand Specific information and details of simple longer texts"
@@ -1528,6 +1528,11 @@ TONE: Professional, concise, and ready to copy-paste.
      **2.** [Complementary Objective - SMART]
    - Use **bold numbers** manually typed out (e.g., **1.**).
    - Leave an empty line between objectives.
+   
+   **Success Criteria:**
+   **1.** Pupils can [measurable action related to main objective].
+   
+   **2.** Pupils can [measurable action related to complementary objective].
 
 3. **LESSON STEPS (CRITICAL FORMATTING - COPY/PASTE FRIENDLY):**
    - **NO PARAGRAPHS:** Never group steps together.
