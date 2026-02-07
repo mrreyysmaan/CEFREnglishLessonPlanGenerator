@@ -141,30 +141,38 @@ if generate_btn:
     if not api_key:
         st.error("Please enter your API Key to proceed.")
     else:
-        try:
-            # Connect to Gemini
-            genai.configure(api_key=api_key)
-            model = genai.GenerativeModel('gemini-1.5-flash')
-            
-            # The Prompt that combines your Rules + User Selection
-            full_prompt = f"""
-            {SYSTEM_PROMPT}
-            
-            **LESSON CONTEXT:**
-            - **Class:** {selected_year}
-            - **Unit/Topic:** {selected_unit}
-            - **Focus Skill:** {selected_skill}
-            - **Learning Standards:** {selected_ls}
-            - **Teacher Notes:** {notes}
-            
-            GENERATE THE FULL LESSON PLAN NOW.
-            """
-            
-            with st.spinner("🤖 Consulting the syllabus... Creating detailed steps..."):
+        # Connect to Gemini
+        genai.configure(api_key=api_key)
+        
+        # The Prompt that combines your Rules + User Selection
+        full_prompt = f"""
+        {SYSTEM_PROMPT}
+        
+        **LESSON CONTEXT:**
+        - **Class:** {selected_year}
+        - **Unit/Topic:** {selected_unit}
+        - **Focus Skill:** {selected_skill}
+        - **Learning Standards:** {selected_ls}
+        - **Teacher Notes:** {notes}
+        
+        GENERATE THE FULL LESSON PLAN NOW.
+        """
+        
+        with st.spinner("🤖 Consulting the syllabus... Creating detailed steps..."):
+            try:
+                # Try the newest, fastest model first
+                model = genai.GenerativeModel('gemini-1.5-flash')
                 response = model.generate_content(full_prompt)
                 st.markdown(response.text)
-                st.success("Lesson Plan Generated! Copy and paste this into your RPH.")
+                st.success("Generated with Gemini Flash! (Fastest)")
                 
-        except Exception as e:
-            st.error(f"Error: {e}")
-            st.info("Check your API key or internet connection.")
+            except Exception as e:
+                # If 'Flash' is not found (404), switch to 'Pro' automatically
+                try:
+                    model = genai.GenerativeModel('gemini-pro')
+                    response = model.generate_content(full_prompt)
+                    st.markdown(response.text)
+                    st.success("Generated with Gemini Pro! (Reliable Backup)")
+                except Exception as e2:
+                    st.error(f"Error: {e2}")
+                    st.info("Check your API key. If you just created it, wait 5 minutes.")
